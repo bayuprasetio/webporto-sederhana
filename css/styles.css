@@ -1,0 +1,442 @@
+* {
+  font-family: "Heebo";
+}
+
+body {
+  margin: auto;
+}
+
+.header-nav {
+  width: 100%;
+  position: fixed;
+  padding: 18px 150px;
+  background: #ffffff;
+  z-index: 9;
+}
+
+.logo {
+  display: flex;
+  flex: 1;
+}
+
+.logo img {
+  width: 150px;
+  display: flex;
+}
+
+.sidebar {
+  flex: 1;
+}
+
+.navbar {
+  justify-content: flex-end;
+}
+
+.navbar a {
+  margin: 16px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: #00ac11;
+  text-decoration: underline;
+}
+
+.top-sidebar {
+  display: none;
+}
+
+.overlay-bg {
+  display: none;
+}
+
+.burger-icon {
+  display: none;
+}
+
+.hero-section {
+  padding: 150px 150px 100px;
+  background: #ffffff;
+}
+
+.hero-border {
+  display: flex;
+}
+
+.hero-content h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 60px;
+  color: #21243d;
+  padding: 20px 0;
+}
+
+.hero-content p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #21243d;
+  padding-right: 100px;
+  padding-bottom: 20px;
+}
+
+.hero-content a {
+  border-color: #ff6464;
+  background: #ff6464;
+  border-radius: 2px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+  color: #ffffff;
+  margin: 20px 0;
+  padding: 10px 20px;
+}
+
+.hero-thumbnail {
+  text-align: center;
+}
+
+.hero-thumbnail img {
+  width: 270px;
+  height: 270px;
+  border-radius: 135px;
+  border: darkgrey;
+  box-shadow: -5px 15px #edf7fa;
+}
+
+.featured-work {
+  padding: 50px 150px 100px;
+  background: #21243d;
+}
+
+.featured-work h3 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 60px;
+  color: #ffffff;
+  padding-bottom: 20px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.featured-work img {
+  border-radius: 6px;
+  padding: 20px;
+}
+
+.card-body {
+  padding: 0 20px;
+}
+
+.card-body h4 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 28px;
+  color: #21243d;
+  padding-bottom: 15px;
+}
+
+.card-body p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.card-body a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  height: 47px;
+  background: #ff6464;
+  border-radius: 2px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.footer {
+  text-align: center;
+  padding: 50px 0;
+  background: #ffffff;
+}
+
+.sosmed a {
+  text-decoration: none;
+  padding: 0 20px;
+}
+
+.sosmed img:hover {
+  width: 4%;
+}
+.sosmed img:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.sosmed img:active {
+  color: #000;
+}
+
+.sosmed img:active:after {
+  background: transparent;
+}
+
+.sosmed img:hover:before {
+  opacity: 1;
+}
+
+.sosmed img:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.copyright {
+  padding-top: 25px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #21243d;
+}
+
+@media (max-width: 991px) {
+  body {
+    width: 100%;
+  }
+
+  .header-nav {
+    width: 100%;
+    padding: 18px 30px;
+  }
+
+  .hero-section {
+    padding: 120px 30px 50px;
+  }
+
+  .hero-content {
+    padding-right: 15px;
+  }
+
+  .hero-content h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    color: #21243d;
+    padding: 20px 0;
+  }
+
+  .hero-content p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #21243d;
+    padding-right: 0px;
+    padding-bottom: 20px;
+  }
+
+  .featured-work {
+    padding: 50px 30px 50px;
+    background: #21243d;
+  }
+
+  .card-border {
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    width: 100%;
+  }
+
+  .header-nav {
+    padding: 18px 8px;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .sidebar {
+    position: absolute;
+    width: 180px;
+    height: 100vh;
+    top: 0;
+    right: -180px;
+    padding-top: 20px;
+    background: #ffffff;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    z-index: 9;
+    transition: 1s;
+  }
+
+  .sidebar.navbar-active {
+    right: 0px;
+  }
+
+  .top-sidebar {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .logo-sidebar {
+    margin: auto;
+    padding-left: 10px;
+  }
+
+  .burger-icon {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .burger-icon img {
+    width: 30px;
+  }
+
+  .logo-sidebar img {
+    max-width: 50%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+  }
+
+  .navbar li {
+    padding-top: 20px;
+  }
+
+  .navbar a {
+    margin-left: 10px;
+    font-size: 16px;
+  }
+
+  .overlay-bg {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: none;
+    z-index: 1;
+  }
+
+  .overlay-bg.navbar-active {
+    display: block;
+  }
+
+  .hero-section {
+    padding: 70px 0 50px;
+  }
+
+  .hero-border {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .hero-content {
+    padding-top: 30px;
+    padding-right: 15px;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    color: #21243d;
+    padding: 20px 0;
+  }
+
+  .hero-content p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #21243d;
+    padding-right: 0px;
+    padding-bottom: 20px;
+  }
+
+  .hero-thumbnail {
+    flex-direction: column-reverse;
+  }
+
+  .hero-thumbnail img {
+    width: 60%;
+    height: 60%;
+  }
+
+  .sosmed a {
+    text-decoration: none;
+    padding: 0 15px;
+  }
+}
