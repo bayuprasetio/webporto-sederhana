@@ -109,7 +109,7 @@ body {
   height: 270px;
   border-radius: 135px;
   border: darkgrey;
-  box-shadow: -5px 15px #edf7fa;
+  box-shadow: -3px 13px rgba(237, 247, 250, 1);
 }
 
 .featured-work {
